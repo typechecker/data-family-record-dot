@@ -1,0 +1,23 @@
+cabal-version:      3.4
+name:               data-family-record-dot
+version:            0.1.0.0
+homepage:
+    https://github.com/typechecker/data-family-record-dot#readme
+
+license:            MPL-2.0
+license-file:       LICENSE
+author:             Phil de Joux
+maintainer:         philderbeast@gmail.com
+category:           Language
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+
+common warnings
+    ghc-options: -Wall
+
+library
+    import:           warnings
+    exposed-modules:  MyLib
+    build-depends:    base ^>=4.17.0.0
+    hs-source-dirs:   src
+    default-language: GHC2021
