@@ -1,6 +1,11 @@
+{-# LANGUAGE CPP #-}
 {-# LANGUAGE DataKinds #-}
 {-# LANGUAGE DuplicateRecordFields #-}
 {-# LANGUAGE RecordWildCards #-}
+#if !MIN_VERSION_base(4,17,0)
+{-# OPTIONS_GHC -Wno-unticked-promoted-constructors #-}
+#endif
+
 module RecordUpdate where
 
 import DataFamily (Choice(..))
